@@ -9,6 +9,7 @@ export default function Home() {
   
   return (
     <>
+      <div>node_env is {process.env.NODE_ENV}</div>
       <Link href="/test">{'<Link />'} to /test</Link>
       <button onClick={() => {router.push('/test')}}>router.push to /test</button>
       <button onClick={move}>redirect in server action to /test</button>
