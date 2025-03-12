@@ -1,5 +1,7 @@
 # reproduction-bug-redirect-in-server-action-between-prod-and-dev
 
+https://reproduction-bug-redirect-in-server-action-between-prod-and-dev.vercel.app
+
 I found that ⁠`redirect()` in server actions works differently between production and development environments. In production, a server action request that redirects to '/test' returns a 303 Response that has RSC payloads. However, in development, despite this, an unknown request with an RSC payload still occurs.
 
 ## production
